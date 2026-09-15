@@ -1,0 +1,19 @@
+{
+  "singleQuote": true,
+  "printWidth": 100,
+  "plugins": ["@ianvs/prettier-plugin-sort-imports"],
+  "importOrder": [
+    "<TYPES>",
+    "",
+    "^react$",
+    "^@mantine/.*$",
+    "",
+    "<THIRD_PARTY_MODULES>",
+    "^@/(?!.*\\.css$).*$",
+    "^\\.\\.?/(?!.*\\.css$).*$",
+    "",
+    "^@/.*\\.css$",
+    "^\\.\\.?/.*\\.css$"
+  ],
+  "importOrderParserPlugins": ["typescript", "jsx"]
+}
