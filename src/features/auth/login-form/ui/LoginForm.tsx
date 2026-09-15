@@ -32,15 +32,18 @@ export function LoginForm() {
     <form onSubmit={handleSubmit}>
       <Stack gap="md">
         <TextInput
+          type="email"
           label="Email"
           placeholder="email@example.com"
           required
+          autoComplete="username"
           {...form.getInputProps('email')}
         />
         <PasswordInput
           label="Пароль"
           placeholder="Не менее 3 символов"
           required
+          autoComplete="current-password"
           {...form.getInputProps('password')}
         />
         <Button type="submit" fullWidth>

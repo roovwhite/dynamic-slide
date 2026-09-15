@@ -7,7 +7,7 @@ export function LoginPage() {
     <Center mih="100vh" p="md">
       <Paper withBorder shadow="sm" radius="md" p="xl" w={360}>
         <Stack gap="xs" mb="lg">
-          <Title order={2}>Вход</Title>
+          <Title order={1}>Вход</Title>
           <Text size="sm" c="dimmed">
             Введите email и пароль, чтобы продолжить
           </Text>

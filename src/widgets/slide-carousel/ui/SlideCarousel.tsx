@@ -47,7 +47,7 @@ export function SlideCarousel() {
   return (
     <Stack gap="md">
       <Group justify="space-between">
-        <Title order={3}>Слайды</Title>
+        <Title order={2}>Слайды</Title>
         <AddSlideButton />
       </Group>
 
@@ -77,7 +77,7 @@ export function SlideCarousel() {
                     <Card withBorder radius="md" padding="lg" h="100%" mih={130}>
                       <Stack gap="xs" h="100%">
                         <Group justify="space-between" wrap="nowrap">
-                          <Title order={4}>{slide.title}</Title>
+                          <Title order={3}>{slide.title}</Title>
                           <DeleteSlideButton slideId={slide.id} slideTitle={slide.title} />
                         </Group>
                         <Text size="sm" c="dimmed" style={{ flexGrow: 1 }}>
