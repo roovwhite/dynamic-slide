@@ -29,7 +29,7 @@ export function LoginForm() {
   });
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} noValidate>
       <Stack gap="md">
         <TextInput
           type="email"
