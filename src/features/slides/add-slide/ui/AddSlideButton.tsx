@@ -53,7 +53,7 @@ export function AddSlideButton() {
         Добавить слайд
       </Button>
       <Modal opened={opened} onClose={handleClose} title="Новый слайд" centered>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} noValidate>
           <Stack gap="md">
             <TextInput
               label="Заголовок"
