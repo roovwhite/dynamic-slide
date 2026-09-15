@@ -1,0 +1,25 @@
+.root::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 100%;
+  background-color: var(--notification-color, var(--mantine-color-gray-6));
+  transform-origin: left;
+  animation: progress var(--notification-duration, 5000ms) linear forwards;
+}
+
+.root:hover::after,
+.root:focus-within::after {
+  animation-play-state: paused;
+}
+
+@keyframes progress {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
